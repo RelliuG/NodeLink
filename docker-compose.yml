@@ -10,8 +10,8 @@ services:
       - "3000:3000"
     volumes:
     #   - ./local-music:/app/local-music
-    #   - ./logs:/app/logs
-    #   - ./.cache:/app/.cache
+      - ./logs:/app/logs
+      - ./.cache:/app/.cache
       - ./config.js:/app/config.js
     restart: unless-stopped
     networks:
