@@ -7,16 +7,14 @@ services:
       dockerfile: Dockerfile
     container_name: nodelink
     ports:
-      - "3000:3000"
+      - "2333:2333"
+    environment:
+      # --- Server Configuration ---
+      NODELINK_SERVER_HOST: "0.0.0.0"
+      NODELINK_SERVER_PORT: "2333"
     volumes:
     #   - ./local-music:/app/local-music
       - ./logs:/app/logs
       - ./.cache:/app/.cache
       - ./config.js:/app/config.js
     restart: unless-stopped
-    networks:
-      - bot_shared_net 
-networks:
-  bot_shared_net:
-    external: true
-    name: bot_network
