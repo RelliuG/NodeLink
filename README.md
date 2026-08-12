@@ -20,7 +20,7 @@
 
 ## Prerequisites
 
-* **Node.js** v22 or higher (v24 recommended)
+* **Node.js** v22.22.2 or higher (v24 recommended)
 * **Git**
 
 ---
@@ -82,7 +82,7 @@ docker build -t nodelink .
 docker run -p 2333:2333 nodelink
 ```
 
-**See the Docker guide:** [nodelink.js.org/docs/advenced/docker](https://nodelink.js.org/docs/advenced/docker)
+**See the Docker guide:** [nodelink.js.org/docs/advanced/docker](https://nodelink.js.org/docs/advanced/docker)
 
 ---
 
@@ -103,7 +103,7 @@ However, some clients may not work properly, since NodeLink changes certain beha
 | [lava-lyra](https://github.com/ParrotXray/lava-lyra)                | Python       | Yes           | Yes                | v3                     |                                                                                                                                                                                                                 |
 | [Hikari-ongaku](https://github.com/MPlatypus/hikari-ongaku)         | Python       | unknown       | No                 | v1 and v2              |                                                                                                                                                                                                                 |
 | [Moonlink.js](https://github.com/1Lucas1apk/moonlink.js)            | TypeScript   | Yes           | Yes                | v1, v2, v3             |                                                                                                                                                                                                                 |
-| [Magmastream](https://github.com/Blackfort-Hosting/magmastream)     | TypeScript   | unknown       | No                 | v1                     |                                                                                                                                                                                                                 |
+| [Magmastream](https://github.com/Blackfort-Hosting/magmastream)     | TypeScript   | Yes           | Yes                | v1 and v3             |                                                                                                                                                                                                                 |
 | [Lavacord](https://github.com/lavacord/Lavacord)                    | TypeScript   | unknown       | No                 | v1 and v2              |                                                                                                                                                                                                                 |
 | [Shoukaku](https://github.com/Deivu/Shoukaku)                       | TypeScript   | Yes           | No                 | v1, v2, v3             |                                                                                                                                                                                                                 |
 | [Hoshimi](https://github.com/Ganyu-Studios/Hoshimi)                 | TypeScript   | Yes           | No                 | v1, v2, v3             | ;P                                                                                                                                                                                                              |
@@ -151,7 +151,7 @@ NodeLink exposes **Prometheus metrics** at `/v4/metrics` for production monitori
 * API request tracking per endpoint
 * Source usage tracking
 
-**See the monitoring guide:** [nodelink.js.org/docs/advenced/prometheus](https://nodelink.js.org/docs/advenced/prometheus)
+**See the monitoring guide:** [nodelink.js.org/docs/advanced/prometheus](https://nodelink.js.org/docs/advanced/prometheus)
 
 ---
 
